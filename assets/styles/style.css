@@ -8,6 +8,16 @@
   --main-text-color: #eee;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #181818;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5rem;
+  background-color: rgba(255, 255, 255, 0.226);
+}
+
 body {
   margin: 0;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #121212), to(black));
@@ -44,7 +54,7 @@ body main {
 }
 
 body main #headline {
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
