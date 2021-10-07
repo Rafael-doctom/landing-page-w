@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alívio das Dores nas Costas">
+    <meta name="description" content="Livre-se das dores nas costas e ciático.">
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/styles/style.css">
+
+    <link rel="shortcut icon" href="./assets/images/favicon.jpeg" type="image/x-icon">
+    <title>Alívio das Dores nas Costas | Livre-se das dores nas costas e ciático</title>
+
+</head>
+<body>
+    <header>
+        <p>
+            173 pessoas em <span class="locationJS">sua cidade</span> estão assistindo ao vídeo!
+        </p>
+    </header>
+    <main>
+        <div id="headline" tabindex="1">
+            <img src="./assets/images/headline.png" alt="titulo">
+            <img src="./assets/images/headline-mobile.png" class="headline-mobile" alt="titulo">
+        </div>
+        <div id="vsl">
+            <script src="https://fast.wistia.com/embed/medias/7lzi2ri6gn.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="position:relative;" onclick="remove()"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_7lzi2ri6gn videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/7lzi2ri6gn/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+
+            <p>
+                Por favor, verifique se o seu som está ligado
+            </p>
+        </div>
+        
+        <section id="delay">
+        </section>
+    </main>
+    <footer>
+        <p>
+            <strong>Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook</strong>. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os esforços para indicar claramente e mostrar todas as provas do produto e usamos resultados reais. Nós não vendemos o seu e-mail ou qualquer informação para terceiros. Jamais fazemos nenhum tipo de spam. Se você tiver alguma dúvida, sinta-se à vontade para usar o link de contato e falar conosco em horário comercial de Segunda a Sextas das 09h00 ás 18h00. Lemos e respondemos todas as mensagens por ordem de chegada.
+        </p>
+        <p>
+            Copyright 2021 – Todos os direitos reservados.
+        </p>
+    </footer>
+
+    <script src="./assets/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $.getJSON("https://ipgeolocation.abstractapi.com/v1/?api_key=25505b89511c46b0b9b7d567a41881b3", function(data) {
+            document.querySelector('.locationJS').innerHTML = data.city
+        })
+    </script>
+
+
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '583110889432441');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=583110889432441&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+</body>
+</html>
